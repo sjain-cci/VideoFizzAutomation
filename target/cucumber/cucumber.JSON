@@ -1,0 +1,254 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 400594489,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the Videofizz app",
+            "match": {
+              "location": "AccountSteps.iOpenTheVideofizzApp()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 7,
+            "value": "#Test case: To check if user can login successfully with valid credentials"
+          },
+          {
+            "line": 8,
+            "value": "#Scenario: Login with valid credentials"
+          },
+          {
+            "line": 9,
+            "value": "# And I enter valid email id in the \"Email Address\" field"
+          },
+          {
+            "line": 10,
+            "value": "#And I enter valid password in the \"Password\" field"
+          },
+          {
+            "line": 11,
+            "value": "#And I tap on the \"signin\" button on the \"Login Screen\""
+          },
+          {
+            "line": 12,
+            "value": "#Then I should be logged in successfully"
+          },
+          {
+            "line": 14,
+            "value": "# Test case: To check if user can login with invalid credentials (invalid password)"
+          },
+          {
+            "line": 15,
+            "value": "#Scenario: Login with invalid password"
+          },
+          {
+            "line": 16,
+            "value": "# When I tap on the \"SignIn\" button on the \"Welcome Screen\""
+          },
+          {
+            "line": 17,
+            "value": "#And I enter invalid email id in the \"Email Address\" field"
+          },
+          {
+            "line": 18,
+            "value": "#And I enter valid password in the \"Password\" field"
+          },
+          {
+            "line": 19,
+            "value": "#And I tap on the \"signin\" button on the \"Login Screen\""
+          },
+          {
+            "line": 20,
+            "value": "#Then I should see a validation message \"Email or password is incorrect\""
+          },
+          {
+            "line": 22,
+            "value": "# Test case: To check if user can login with invalid credentials (invalid email)"
+          },
+          {
+            "line": 23,
+            "value": "#Scenario: Login with invalid email address"
+          },
+          {
+            "line": 24,
+            "value": "# When I tap on the \"SignIn\" button on the \"Welcome Screen\""
+          },
+          {
+            "line": 25,
+            "value": "#And I enter valid email id in the \"Email Address\" field"
+          },
+          {
+            "line": 26,
+            "value": "#And I enter invalid password in the \"Password\" field"
+          },
+          {
+            "line": 27,
+            "value": "#And I tap on the \"signin\" button on the \"Login Screen\""
+          },
+          {
+            "line": 28,
+            "value": "#Then I should see a validation message \"Email or password is incorrect\""
+          },
+          {
+            "line": 31,
+            "value": "# Test case: To check if user can login with invalid username format"
+          },
+          {
+            "line": 32,
+            "value": "#Scenario: Login with username of invalid email format"
+          },
+          {
+            "line": 33,
+            "value": "#When I tap on the \"SignIn\" button on the \"Welcome Screen\""
+          },
+          {
+            "line": 34,
+            "value": "#And I enter email id of invalid format in the \"Email Address\" field"
+          },
+          {
+            "line": 35,
+            "value": "#And I enter valid password in the \"Password\" field"
+          },
+          {
+            "line": 36,
+            "value": "#And I tap on the \"signin\" button on the \"Login Screen\""
+          },
+          {
+            "line": 37,
+            "value": "#Then I should see a validation message \"Wrong email format\""
+          },
+          {
+            "line": 39,
+            "value": "# Test case: To check if user can login with facebook successfully (using facebook app where user has not logged in the app)"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 23557169530,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AndroidManager.Setup()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Login with facebook",
+        "description": "",
+        "id": "login;login-with-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5142284825,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I tap on the \"SignIn\" button on the \"Welcome Screen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignIn",
+                  "offset": 14
+                },
+                {
+                  "val": "Welcome Screen",
+                  "offset": 37
+                }
+              ],
+              "location": "AccountSteps.iTapOnTheButtonOnThe(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1168026147,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I tap on the \"Sign in with Facebook\" button on the \"Login Screen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign in with Facebook",
+                  "offset": 14
+                },
+                {
+                  "val": "Login Screen",
+                  "offset": 52
+                }
+              ],
+              "location": "AccountSteps.iTapOnTheButtonOnThe(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20979654231,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I enter the facebook account details to login",
+            "match": {
+              "location": "LoginSteps.iEnterTheFacebookAccountDetailsToLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 553019001325,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I tap on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginSteps.iTapOnButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20730111231,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I should be logged in successfully with facebook account",
+            "match": {
+              "location": "LoginSteps.iShouldBeLoggedInSuccessfullyWithFacebookAccount()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

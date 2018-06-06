@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="624.996842">
+<testcase classname="Login" name="Login with facebook" time="624.996842">
+<system-out><![CDATA[Given I open the Videofizz app..............................................passed
+When I tap on the "SignIn" button on the "Welcome Screen"...................passed
+And I tap on the "Sign in with Facebook" button on the "Login Screen".......passed
+And I enter the facebook account details to login...........................passed
+And I tap on "Continue" button..............................................passed
+Then I should be logged in successfully with facebook account...............passed
+]]></system-out>
+</testcase>
+</testsuite>
